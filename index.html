@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://agent-6ad64478a475f0616b8fab8e-%2Dindicadoress.netlify.app/ -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=0f796fdc-e3b2-4f57-a453-5436a92509fb
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Envases Merida · Seguimiento de indicadores</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f6f7f6;--card:#fff;--tx:#1d2a24;--mu:#66756d;--br:#dde3df;--pr:#2f6f55;--prt:#fff;--alt:#f1f4f2;--s1:#7cc4f2;--s2:#1c4fc4;--s3:#2e9e5b;--ok:#2f6f55;--pend:#b9772a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141a17;--card:#1c2420;--tx:#e8eeea;--mu:#9aa8a0;--br:#2e3a34;--pr:#4fa883;--prt:#0f1713;--alt:#222c27;--s1:#8fd0f7;--s2:#4a7df0;--s3:#4fc77f;--ok:#4fa883;--pend:#e0a35a}}
+:root[data-theme="dark"]{--bg:#141a17;--card:#1c2420;--tx:#e8eeea;--mu:#9aa8a0;--br:#2e3a34;--pr:#4fa883;--prt:#0f1713;--alt:#222c27;--s1:#8fd0f7;--s2:#4a7df0;--s3:#4fc77f;--ok:#4fa883;--pend:#e0a35a}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--tx);font:15px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:var(--pr);color:var(--prt);padding:14px 16px}
+header{display:flex;align-items:center;gap:12px}
+header .logo{width:30px;height:38px;flex:none}
+header h1{margin:0;font-size:22px;font-weight:700;line-height:1.1}
+header .sub{margin:2px 0 0;font-size:13px;opacity:.9}
+nav{display:flex;gap:4px;padding:10px 12px 0;max-width:900px;margin:auto}
+nav button{flex:1;padding:10px;border:1px solid var(--br);border-bottom:none;background:var(--alt);color:var(--mu);font:inherit;font-weight:600;border-radius:8px 8px 0 0;cursor:pointer}
+nav button.on{background:var(--card);color:var(--pr)}
+main{max-width:900px;margin:auto;padding:0 12px 24px}
+.card{background:var(--card);border:1px solid var(--br);border-radius:0 0 10px 10px;padding:14px}
+.row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px;align-items:end}
+label{display:flex;flex-direction:column;font-size:12px;color:var(--mu);gap:3px}
+input,select,textarea{font:inherit;padding:8px;border:1px solid var(--br);border-radius:6px;background:var(--bg);color:var(--tx)}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:420px}
+th,td{padding:7px 8px;text-align:left;border-bottom:1px solid var(--br)}
+th{background:var(--pr);color:var(--prt);font-size:13px}
+td.n,th.n{text-align:right}
+tr.g td{background:var(--alt);font-weight:600;color:var(--pr)}
+td input{width:80px;text-align:right}
+td input.cm{width:100%;min-width:160px;text-align:left}
+.btn{background:var(--pr);color:var(--prt);border:0;padding:10px 18px;border-radius:8px;font:inherit;font-weight:600;cursor:pointer}
+.btn-sm{background:var(--alt);border:1px solid var(--mu);padding:4px 8px;border-radius:6px;font-size:12px;cursor:pointer;color:var(--tx);font-family:inherit;}
+.btn-sm:hover{background:var(--br)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.chip{font-size:12px;padding:3px 9px;border-radius:99px;border:1px solid currentColor}
+.ok{color:var(--ok)}.pend{color:var(--pend)}
+.msg{font-size:13px;margin-left:10px;color:var(--ok)}
+.warn{background:var(--alt);border:1px solid var(--pend);color:var(--pend);padding:8px 12px;border-radius:8px;margin:10px 12px 0;max-width:876px;margin-inline:auto;font-size:13px}
+.leg{display:flex;gap:14px;font-size:13px;margin:6px 0;flex-wrap:wrap;}
+.leg span{display:flex;align-items:center;}
+.leg i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}
+.mu{color:var(--mu);font-size:12px}
+h3{margin:16px 0 6px;font-size:15px}
+svg{width:100%;height:auto;max-height:280px;}
+#ch{position:relative}
+#ch svg{touch-action:pan-y;cursor:crosshair}
+.ttip{position:absolute;pointer-events:none;background:var(--card);color:var(--tx);border:1px solid var(--br);border-radius:8px;padding:6px 10px;font-size:12px;box-shadow:0 4px 14px rgba(0,0,0,.15);white-space:nowrap;z-index:5;display:none}
+.ttip b{display:block;margin-bottom:3px;font-size:12px}
+.ttip div{display:flex;align-items:center;gap:6px;line-height:1.5}
+.ttip i{display:inline-block;width:8px;height:8px;border-radius:50%}
+.ttip span.v{margin-left:auto;padding-left:10px;font-weight:600;font-variant-numeric:tabular-nums}
+
+/* Estilos de Semáforo / Alertas de color */
+.alert-yellow { background-color: #fff3cd !important; color: #856404 !important; font-weight: bold; border-radius: 4px; }
+.alert-green { background-color: #d4edda !important; color: #155724 !important; font-weight: bold; border-radius: 4px; }
+.alert-red { background-color: #f8d7da !important; color: #721c24 !important; font-weight: bold; border-radius: 4px; }
+
+/* Pendientes */
+textarea.po{width:100%;resize:vertical;min-height:70px}
+.pend-sec{margin-top:18px;border-top:1px solid var(--br);padding-top:2px}
+td.pc{width:44px;text-align:center}
+td.pc input{width:20px;height:20px;cursor:pointer;accent-color:var(--pr)}
+tr.pdone td{color:var(--mu)}
+tr.pdone .pot{text-decoration:line-through}
+td.pob{min-width:180px;white-space:pre-wrap}
+.pcom{margin-top:4px;padding:3px 8px;background:var(--alt);border-radius:6px;font-size:12px}
+.badge{display:inline-block;font-size:11px;padding:1px 8px;border-radius:99px;border:1px solid currentColor}
+</style>
+</head>
+<body>
+<header><svg class="logo" viewBox="0 0 32 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.5"><ellipse cx="16" cy="6" rx="12" ry="4"></ellipse><path d="M4 6v28c0 2.2 5.4 4 12 4s12-1.8 12-4V6"></path></g></svg><div><h1>Envases Merida</h1><p class="sub">📊 Seguimiento de indicadores por línea</p></div></header>
+<div id="warn"><div class="warn" style="border-color:var(--ok);color:var(--ok)">✓ Conectado a la base de datos en Google Sheets</div></div>
+<nav><button id="t1" class="on">✏️ Captura</button><button id="t2">📈 Seguimiento</button></nav>
+<main>
+<section class="card" id="p1">
+  <div class="row">
+    <label>Fecha<input type="date" id="cf"></label>
+    <label>Área
+      <div style="display:flex;gap:6px">
+        <select id="ca"><option value="0">Producción</option><option value="1">Calidad</option><option value="2">Área química</option><option value="3">Front end</option><option value="4">Impresoras</option><option value="5">Back end</option><option value="6">Transportes</option></select>
+        <button id="addArea" class="btn-sm" title="Crear nueva área">+ Área</button>
+      </div>
+    </label>
+  </div>
+  <div style="margin-bottom:12px">
+    <button id="addInd" class="btn-sm">+ Agregar Indicador a esta Área</button>
+  </div>
+  <div class="tw"><table><thead><tr><th>Indicador</th><th class="n">Línea 1</th><th class="n">Línea 2</th><th class="n">Línea 2.1</th><th>Comentario</th><th class="n">Acciones</th></tr></thead><tbody id="cb"><tr><td>Consumo barniz</td><td class="n"><input type="number" step="any" inputmode="decimal" id="in_0_0" class="" value="" oninput="checkInputAlert(this, 0)"></td><td class="n"><input type="number" step="any" inputmode="decimal" id="in_0_1" class="" value="" oninput="checkInputAlert(this, 0)"></td><td class="n mu" title="No aplica">·</td><td><input type="text" class="cm" id="cm_0" value="" placeholder="Comentario…" oninput="capDirty=true"></td><td class="n" style="white-space:nowrap"><button onclick="editInd(0)" class="btn-sm" title="Editar nombre">✏️</button> <button onclick="deleteInd(0)" class="btn-sm" title="Borrar indicador" style="color:var(--pend);border-color:var(--pend)">🗑</button></td></tr><tr><td>Tiempos muertos Necker</td><td class="n"><input type="text" inputmode="text" autocomplete="off" placeholder="h:mm" title="Formato horas:minutos, ej. 2:55" id="in_1_0" class="" value="" oninput="checkInputAlert(this, 1)"></td><td class="n"><input type="text" inputmode="text" autocomplete="off" placeholder="h:mm" title="Formato horas:minutos, ej. 2:55" id="in_1_1" class="" value="" oninput="checkInputAlert(this, 1)"></td><td class="n mu" title="No aplica">·</td><td><input type="text" class="cm" id="cm_1" value="" placeholder="Comentario…" oninput="capDirty=true"></td><td class="n" style="white-space:nowrap"><button onclick="editInd(1)" class="btn-sm" title="Editar nombre">✏️</button> <button onclick="deleteInd(1)" class="btn-sm" title="Borrar indicador" style="color:var(--pend);border-color:var(--pend)">🗑</button></td></tr><tr><td>Merma</td><td class="n"><input type="number" step="any" inputmode="decimal" id="in_2_0" class="" value="" oninput="checkInputAlert(this, 2)"></td><td class="n"><input type="number" step="any" inputmode="decimal" id="in_2_1" class="" value="" oninput="checkInputAlert(this, 2)"></td><td class="n mu" title="No aplica">·</td><td><input type="text" class="cm" id="cm_2" value="" placeholder="Comentario…" oninput="capDirty=true"></td><td class="n" style="white-space:nowrap"><button onclick="editInd(2)" class="btn-sm" title="Editar nombre">✏️</button> <button onclick="deleteInd(2)" class="btn-sm" title="Borrar indicador" style="color:var(--pend);border-color:var(--pend)">🗑</button></td></tr></tbody></table></div>
+  <p><button class="btn" id="sv">Guardar</button><span class="msg" id="ms"></span></p>
+
+  <div class="pend-sec">
+    <h3>📌 Pendientes</h3>
+    <div class="row">
+      <label>Fecha<input type="date" id="pf"></label>
+      <label>Área<select id="pa"><option value="0">Producción</option><option value="1">Calidad</option><option value="2">Área química</option><option value="3">Front end</option><option value="4">Impresoras</option><option value="5">Back end</option><option value="6">Transportes</option></select></label>
+      <label style="flex:1;min-width:180px">Responsable<input type="text" id="pr" maxlength="80" placeholder="Nombre del responsable"></label>
+    </div>
+    <label>Observaciones<textarea id="po" class="po" rows="3" placeholder="Describe el pendiente..."></textarea></label>
+    <p><button class="btn" id="pAdd">Agregar pendiente</button><span class="msg" id="pm"></span></p>
+  </div>
+</section>
+<section class="card" id="p2" hidden="">
+  <div class="row">
+    <label>Vista<select id="vm"><option value="d">Diario</option><option value="m">Mensual</option></select></label>
+    <label id="ld">Día<input type="date" id="vd"></label>
+    <label id="lm" hidden="">Mes<input type="month" id="vmo"></label>
+    <button id="reload" class="btn-sm" style="align-self:end">🔄 Actualizar datos</button>
+  </div>
+  <div id="vc"></div>
+
+  <div class="pend-sec" id="pendSec">
+    <h3>📌 Pendientes <span class="mu" id="pcnt"></span></h3>
+    <div class="row">
+      <label>Área<select id="pfa"><option value="all">Todas</option><option value="a0">Producción</option><option value="a1">Calidad</option><option value="a2">Área química</option><option value="a3">Front end</option><option value="a4">Impresoras</option><option value="a5">Back end</option><option value="a6">Transportes</option></select></label>
+      <label>Estado<select id="pfe"><option value="p">Pendientes</option><option value="r">Realizados</option><option value="t">Todos</option></select></label>
+      <div id="pgauge" style="align-self:center"></div>
+    </div>
+    <div class="tw" id="pl"></div>
+  </div>
+</section>
+</main>
+<script>
+// URL de tu Google Apps Script
+const API_URL = "https://script.google.com/macros/s/AKfycbzyP-NVxTcMoPP2PiSRa1ekfoZ7Pg6DsDSRG0ghJ8I4QhfEHbQ2fBjUTLdPGaZjcbdV/exec";
+
+const DEFAULT_AREAS=[
+["Producción",["Producción", "Merma"]],
+["Calidad",["Producto detenido","% Rechazo necker","% Rechazo orion"]],
+["Área química",["Movilidad","Tramp Oil","Aceites totales"]],
+["Front end",["Peso de copa","% Rompimientos","Consumo aceite","Tiempos muertos"]],
+["Impresoras",["Viscosidad","Peso de barniz ext","Peso de barniz uv","Tiempos muertos"]],
+["Back end",["Consumo barniz","Tiempos muertos Necker","Merma"]],
+["Transportes",["Atorones en cascadas","Merma bote caído"]]];
+
+// Configuración de áreas compartida entre todos los usuarios (se guarda en el servidor).
+// Cada área e indicador tiene un id estable; los datos se guardan con esos ids
+// para que lo que captura una persona nunca aparezca en otra área.
+const AREAS_URL = "/api/areas";
+const seedCfg = () => DEFAULT_AREAS.map(([name, inds], ai) => ({ id: "a" + ai, name, inds: inds.map((n, i) => ({ id: "i" + i, name: n })) }));
+let CFG = seedCfg();
+try { const c = JSON.parse(localStorage.getItem("config_areas_v2")); if (Array.isArray(c) && c.length) CFG = c; } catch(e) {}
+// Vista compatible [nombre, [indicadores]] usada por el resto de la app
+let AREAS = [];
+// Back end: "Peso de cera" pasa a ser "Merma" y se coloca en 3ª posición (debajo de Tiempos muertos)
+function migrateCfg(c) {
+  const n = x => String(x || "").trim().toLowerCase();
+  return c.map(a => {
+    if (n(a.name) !== "back end" || !Array.isArray(a.inds)) return a;
+    const inds = a.inds.map(i => n(i.name) === "peso de cera" ? { ...i, name: "Merma" } : i);
+    const mi = inds.findIndex(i => n(i.name) === "merma");
+    if (mi < 0) return { ...a, inds };
+    const [m] = inds.splice(mi, 1);
+    const ti = inds.findIndex(i => n(i.name).startsWith("tiempos muertos"));
+    inds.splice(ti >= 0 ? ti + 1 : inds.length, 0, m);
+    return { ...a, inds };
+  });
+}
+function setCfg(c) {
+  if (!Array.isArray(c) || !c.length) return;
+  c = migrateCfg(c);
+  CFG = c;
+  AREAS = CFG.map(a => [a.name, a.inds.map(i => i.name)]);
+  localStorage.setItem("config_areas_v2", JSON.stringify(CFG));
+}
+setCfg(CFG);
+const aid = ai => CFG[ai] ? CFG[ai].id : "a" + ai;
+const iid = (ai, i) => CFG[ai] && CFG[ai].inds[i] ? CFG[ai].inds[i].id : "i" + i;
+
+async function areasOp(body) {
+  const res = await fetch(AREAS_URL, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+  const data = await res.json().catch(() => null);
+  if (!res.ok || !Array.isArray(data)) throw new Error((data && data.error) || "Error al guardar la configuración");
+  setCfg(data);
+  return data;
+}
+
+async function loadAreas() {
+  try {
+    const res = await fetch(AREAS_URL, { cache: "no-store" });
+    if (!res.ok) throw new Error("config");
+    setCfg(await res.json());
+    // Migra áreas/indicadores que se crearon solo en este navegador con la versión anterior
+    const old = localStorage.getItem("config_areas");
+    if (old) {
+      try { const list = JSON.parse(old); if (Array.isArray(list)) await areasOp({ op: "merge", areas: list }); } catch(e) {}
+      localStorage.removeItem("config_areas");
+    }
+    return true;
+  } catch(e) { return false; }
+}
+
+const LN=["Línea 1","Línea 2","Línea 2.1"],COL=["var(--s1)","var(--s2)","var(--s3)"];
+const $=id=>document.getElementById(id);
+const escH=x=>String(x==null?"":x).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const today=()=>{const d=new Date();return new Date(d-d.getTimezoneOffset()*6e4).toISOString().slice(0,10)};
+let docs={};
+// Pendientes: { id: {tipo:"pendiente", id, fecha, areaId, area, resp, obs, done, doneDate} }
+let PEND={};
+try{PEND=JSON.parse(localStorage.getItem("pend_v1"))||{}}catch(e){PEND={}}
+const key=(f,a)=>f+"_"+aid(a);
+// Orden de visualización en Seguimiento: Producción primero (sin alterar índices guardados)
+const isProd=a=>{const n=norm(a[0]);return n==="producción"||n==="produccion"};
+const segAreas=()=>{const o=AREAS.map((a,ai)=>[a,ai]);return o.filter(([a])=>isProd(a)).concat(o.filter(([a])=>!isProd(a)))};
+const com=(f,a,i)=>{const d=docs[key(f,a)];return (d&&d.cm&&d.cm[iid(a,i)])||""};
+const val=(f,a,i,l)=>{const d=docs[key(f,a)];const r=d&&d.v&&d.v[iid(a,i)];return r&&r[l]!=null?r[l]:null};
+
+// Formato numérico con comas para separación de millares
+const fmt=v=>{
+  if(v==null) return "—";
+  // Hasta 6 decimales para no ocultar valores pequeños (ej. 0.002)
+  return Number(v).toLocaleString("en-US", { minimumFractionDigits: 0, maximumFractionDigits: 6 });
+};
+
+// Promedios con 2 decimales, excepto "Peso de barniz uv" que conserva todos sus decimales
+const fmtAvg=(v,n)=>{
+  if(v==null) return "—";
+  if(isTM(n)) return hm(v);
+  if(norm(n)==="peso de barniz uv") return fmt(v);
+  return Number(v).toLocaleString("en-US", { minimumFractionDigits: 0, maximumFractionDigits: 2 });
+};
+
+// ===== Tiempos muertos: captura y visualización en horas:minutos (se guardan como horas decimales) =====
+const isTM = n => norm(n).includes("tiempos muertos");
+// Horas decimales -> "H:MM"
+const hm = h => {
+  if (h == null || isNaN(h)) return "—";
+  const t = Math.round(Math.abs(h) * 60);
+  return (h < 0 ? "-" : "") + Math.floor(t / 60) + ":" + String(t % 60).padStart(2, "0");
+};
+// "2:55" -> 2.9166..., "2" o "2.5" -> horas decimales, "" -> null, inválido -> NaN
+const parseHM = str => {
+  const x = String(str == null ? "" : str).trim();
+  if (x === "") return null;
+  let m = x.match(/^(\d+):(\d{1,2})$/);
+  if (m) return +m[2] < 60 ? +m[1] + +m[2] / 60 : NaN;
+  m = x.match(/^\d+(?:[.,]\d+)?$/);
+  return m ? +x.replace(",", ".") : NaN;
+};
+// Merma de Producción: total del día = (Línea 1 + Línea 2) / 2 (solo si hay ambas)
+const isProdMerma = (n, ai) => norm(n) === "merma" && ["producción", "produccion"].includes(norm(AREAS[ai][0]));
+const mermaTot = (f, ai, ii) => {
+  const a = val(f, ai, ii, 0), b = val(f, ai, ii, 1);
+  return a != null && b != null ? (a + b) / 2 : null;
+};
+
+// Valor según el tipo de indicador (tiempos muertos en h:mm)
+const fv = (n, v) => isTM(n) ? hm(v) : fmt(v);
+
+// Indicadores que solo se capturan en Línea 1 y Línea 2 (sin Línea 2.1)
+const SOLO_L12=["producto detenido","% rechazo necker","movilidad","peso de copa","% rompimientos","consumo aceite","tiempos muertos","consumo barniz","tiempos muertos necker","merma","merma bote caído","producción y merma","produccion y merma","producción","produccion"];
+// Indicadores con un solo recuadro de captura (Línea 1)
+const SOLO_L1=["tramp oil","aceites totales"];
+const esc=x=>String(x??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+const norm=x=>String(x||"").trim().toLowerCase();
+const lineas=(n,ai)=>{
+  n=norm(n);
+  const areaNombre = AREAS[ai] ? norm(AREAS[ai][0]) : "";
+  // Si el área es Producción, solo habilita Línea 1 y Línea 2
+  if(areaNombre === "producción" || areaNombre === "produccion") return [0,1];
+  if(SOLO_L1.includes(n)) return [0];
+  // En Impresoras, "Tiempos muertos" sí lleva Línea 2.1
+  if(n=="tiempos muertos"&&areaNombre=="impresoras") return [0,1,2];
+  return SOLO_L12.includes(n)?[0,1]:[0,1,2];
+};
+// Indicadores que muestran el acumulado del mes en la gráfica de tendencia
+const ACUM=["producción","produccion","producto detenido","consumo aceite","consumo de aceite","merma bote caído","merma bote caido","merma de bote caído","merma de bote caido"];
+// Indicadores que se grafican como barras verticales apiladas (Línea 1 + Línea 2)
+const STACK=["producción","produccion","producto detenido","consumo aceite","consumo de aceite","merma bote caído","merma bote caido","merma de bote caído","merma de bote caido"];
+const NA=`<td class="n mu" title="No aplica">·</td>`;
+
+// Función de evaluación de alerta (Semáforo)
+function getAlertClass(indicatorName, value, ai) {
+  if (value == null) return "";
+  const name = norm(indicatorName);
+  const area = AREAS[ai] ? norm(AREAS[ai][0]) : "";
+  // Tiempos muertos: Front end > 2, Impresoras y Necker > 1
+  if (name.includes("tiempos muertos")) {
+    const lim = name.includes("necker") || area === "impresoras" ? 1 : area === "front end" ? 2 : null;
+    if (lim != null && value > lim) return "alert-red";
+    return "";
+  }
+  if (name === "movilidad") return value > 21 ? "alert-red" : "";
+  if (name.includes("% rechazo necker") || name.includes("% rechazo orion")) {
+    if (value >= 0.8) return "alert-red";
+    if (value >= 0.5 && value <= 0.7) return "alert-yellow";
+    if (value < 0.5) return "alert-green";
+  }
+  return "";
+}
+
+function updateAreaSelect() {
+  const cur = CFG[+$("ca").value] ? CFG[+$("ca").value].id : null;
+  $("ca").innerHTML=AREAS.map((a,i)=>`<option value="${i}">${a[0]}</option>`).join("");
+  const idx = CFG.findIndex(a => a.id === cur);
+  if (idx >= 0) $("ca").value = idx;
+
+  // Selects del módulo de Pendientes (conservan la selección actual)
+  const curP = CFG[+$("pa").value] ? CFG[+$("pa").value].id : null;
+  $("pa").innerHTML = AREAS.map((a,i)=>`<option value="${i}">${escH(a[0])}</option>`).join("");
+  const ip = CFG.findIndex(a => a.id === curP);
+  $("pa").value = ip >= 0 ? ip : (idx >= 0 ? idx : 0);
+  const curF = $("pfa").value || "all";
+  $("pfa").innerHTML = `<option value="all">Todas</option>` + CFG.map(a=>`<option value="${a.id}">${escH(a.name)}</option>`).join("");
+  $("pfa").value = [...$("pfa").options].some(o=>o.value===curF) ? curF : "all";
+}
+updateAreaSelect();
+
+$("pf").value=today();$("cf").value=today();$("vd").value=today();$("vmo").value=today().slice(0,7);
+
+function tab(n){$("p1").hidden=n!=1;$("p2").hidden=n!=2;$("t1").className=n==1?"on":"";$("t2").className=n==2?"on":"";render()}
+$("t1").onclick=()=>tab(1);$("t2").onclick=()=>tab(2);
+["cf","ca"].forEach(i=>$(i).onchange=renderCap);
+["vm","vd","vmo"].forEach(i=>$(i).onchange=render);$("reload").onclick=()=>refreshAll(true);
+
+$("addArea").onclick = async () => {
+  const name = prompt("Escribe el nombre de la nueva área:");
+  if (name && name.trim()) {
+    try {
+      await areasOp({ op: "addArea", name: name.trim() });
+      updateAreaSelect();
+      const idx = CFG.findIndex(a => norm(a.name) === norm(name));
+      if (idx >= 0) $("ca").value = idx;
+      renderCap(); render();
+    } catch(e) { alert("⚠ " + e.message); }
+  }
+};
+
+$("addInd").onclick = async () => {
+  const name = prompt("Escribe el nombre del nuevo indicador:");
+  if (name && name.trim()) {
+    try { await areasOp({ op: "addInd", areaId: aid(+$("ca").value), name: name.trim() }); renderCap(); render(); }
+    catch(e) { alert("⚠ " + e.message); }
+  }
+};
+
+// Valores con los que se abrió el formulario; al guardar solo se envían las celdas modificadas
+let capOrig = { k: null, v: {} }, capDirty = false;
+function renderCap(){
+  const f=$("cf").value,a=+$("ca").value;
+  if(!AREAS[a]) return;
+  capOrig = { k: key(f,a), v: {}, cm: {} };
+  $("cb").innerHTML=AREAS[a][1].map((n,i)=>{
+    capOrig.v[iid(a,i)] = [0,1,2].map(l => val(f,a,i,l));
+    const cm = capOrig.cm[iid(a,i)] = com(f,a,i);
+    return `<tr><td>${n}</td>`+[0,1,2].map(l=>{
+      if(!lineas(n,a).includes(l)) return NA;
+      const v = val(f,a,i,l);
+      const alertClass = getAlertClass(n, v, a);
+      if (isTM(n)) return `<td class="n"><input type="text" inputmode="text" autocomplete="off" placeholder="h:mm" title="Formato horas:minutos, ej. 2:55" id="in_${i}_${l}" class="${alertClass}" value="${v==null?"":hm(v)}" oninput="checkInputAlert(this, ${i})"></td>`;
+      return `<td class="n"><input type="number" step="any" inputmode="decimal" id="in_${i}_${l}" class="${alertClass}" value="${v??""}" oninput="checkInputAlert(this, ${i})"></td>`;
+    }).join("")+`<td><input type="text" class="cm" id="cm_${i}" value="${esc(cm)}" placeholder="Comentario…" oninput="capDirty=true"></td><td class="n" style="white-space:nowrap"><button onclick="editInd(${i})" class="btn-sm" title="Editar nombre">✏️</button> <button onclick="deleteInd(${i})" class="btn-sm" title="Borrar indicador" style="color:var(--pend);border-color:var(--pend)">🗑</button></td></tr>`;
+  }).join("");
+  capDirty = false;
+  $("ms").textContent="";
+}
+
+window.checkInputAlert = (inputEl, i) => {
+  capDirty = true;
+  const nm = AREAS[+$("ca").value][1][i];
+  let val = isTM(nm) ? parseHM(inputEl.value) : (inputEl.value === "" ? null : +inputEl.value);
+  if (val != null && isNaN(val)) val = null;
+  inputEl.className = getAlertClass(nm, val, +$("ca").value);
+};
+
+function postDoc(k, data){
+  if(!API_URL) return Promise.resolve();
+  const bodyData = new URLSearchParams();
+  bodyData.append("data", JSON.stringify({ key: k, data: data }));
+  return fetch(API_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: bodyData });
+}
+
+// ===== Pendientes =====
+const savePend = () => localStorage.setItem("pend_v1", JSON.stringify(PEND));
+const newPendId = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+const pfmt = d => { if(!d) return "—"; const [y,m,dd]=d.split("-").map(Number); return new Date(y,m-1,dd).toLocaleDateString("es-MX",{day:"2-digit",month:"short",year:"numeric"}); };
+
+$("pAdd").onclick = async () => {
+  const a = +$("pa").value, resp = $("pr").value.trim(), obs = $("po").value.trim();
+  const pf = $("pf").value;
+  if (!pf) { $("pm").textContent = "⚠ Elige la fecha"; return; }
+  if (!AREAS[a]) { $("pm").textContent = "⚠ Elige un área"; return; }
+  if (!resp) { $("pm").textContent = "⚠ Escribe el responsable"; return; }
+  if (!obs) { $("pm").textContent = "⚠ Escribe las observaciones"; return; }
+  const id = newPendId();
+  const data = { tipo:"pendiente", id, fecha: pf, areaId: aid(a), area: AREAS[a][0], resp, obs, done:false, doneDate:null };
+  PEND[id] = data; savePend();
+  $("pm").textContent = "Guardando...";
+  try {
+    await postDoc("pend_" + id, data);
+    $("pm").textContent = "✓ Pendiente agregado · " + AREAS[a][0];
+    $("pr").value = ""; $("po").value = ""; $("pf").value = today();
+    renderPend();
+  } catch(e) { $("pm").textContent = "⚠ Error al guardar el pendiente"; }
+};
+
+window.togglePend = async (id, chk) => {
+  const d = PEND[id]; if (!d) return;
+  d.done = !!chk; d.doneDate = d.done ? today() : null;
+  savePend(); renderPend();
+  try { await postDoc("pend_" + id, d); } catch(e) {}
+};
+
+window.commentPend = async (id) => {
+  const d = PEND[id]; if (!d) return;
+  const t = prompt(`Comentario para el pendiente de ${d.area} (${d.resp}):`);
+  if (!t || !t.trim()) return;
+  d.coms = Array.isArray(d.coms) ? d.coms : [];
+  d.coms.push({ t: t.trim(), f: today() });
+  savePend(); renderPend();
+  try { await postDoc("pend_" + id, d); } catch(e) {}
+};
+
+window.deletePend = async (id) => {
+  const d = PEND[id]; if (!d) return;
+  if (!confirm(`¿Borrar el pendiente de ${d.area} (${d.resp})?`)) return;
+  delete PEND[id]; savePend(); renderPend();
+  try { await postDoc("pend_" + id, { tipo:"pendiente", id, fecha:d.fecha, area:d.area, deleted:true }); } catch(e) {}
+};
+
+function renderPend() {
+  // Solo los pendientes del día (vista diaria) o del mes (vista mensual) seleccionado
+  const mensual = $("vm").value === "m";
+  const periodo = mensual ? $("vmo").value : $("vd").value;
+  const list = Object.values(PEND).filter(d => periodo && d.fecha && (mensual ? d.fecha.slice(0, 7) === periodo : d.fecha === periodo));
+  const open = list.filter(d => !d.done).length;
+  $("pcnt").textContent = `· ${open} pendiente${open === 1 ? "" : "s"} · ${list.length - open} realizado${list.length - open === 1 ? "" : "s"}`;
+  const fa = $("pfa").value, fe = $("pfe").value;
+
+  // Gauge de avance: realizados / total del periodo (respeta el filtro de área)
+  const gl = list.filter(d => fa === "all" || d.areaId === fa);
+  const gt = gl.length, gd = gl.filter(d => d.done).length;
+  const pct = gt ? Math.round(gd / gt * 100) : 0;
+  const gc = !gt ? "var(--br)" : pct >= 80 ? "var(--ok)" : pct >= 40 ? "var(--pend)" : "#c0392b";
+  $("pgauge").innerHTML = `<svg viewBox="0 0 140 84" width="150" role="img" aria-label="Avance de pendientes ${pct}%">
+    <path d="M14 70 A56 56 0 0 1 126 70" fill="none" stroke="var(--br)" stroke-width="12" pathLength="100"/>
+    ${gt && pct ? `<path d="M14 70 A56 56 0 0 1 126 70" fill="none" stroke="${gc}" stroke-width="12" pathLength="100" stroke-dasharray="${pct} 100"/>` : ""}
+    <text x="70" y="58" text-anchor="middle" font-size="22" font-weight="700" fill="var(--tx)">${gt ? pct + "%" : "—"}</text>
+    <text x="70" y="78" text-anchor="middle" font-size="10" fill="var(--mu)">${gt ? `${gd} de ${gt} realizados` : "Sin pendientes"}</text>
+  </svg>`;
+
+  const rows = list
+    .filter(d => (fa === "all" || d.areaId === fa) && (fe === "t" || (fe === "p" ? !d.done : d.done)))
+    .sort((x, y) => (x.done - y.done) || (x.fecha < y.fecha ? -1 : x.fecha > y.fecha ? 1 : 0))
+    .map(d => `<tr class="${d.done ? "pdone" : ""}">
+      <td class="pc"><input type="checkbox" ${d.done ? "checked" : ""} onchange="togglePend('${d.id}', this.checked)" title="Marcar como realizado"></td>
+      <td>${escH(d.area)}</td>
+      <td>${escH(d.resp)}</td>
+      <td class="pob"><span class="pot">${escH(d.obs)}</span>${(d.coms || []).map(c => `<div class="pcom">💬 ${escH(c.t)} <span class="mu">· ${pfmt(c.f)}</span></div>`).join("")}</td>
+      <td>${pfmt(d.fecha)}</td>
+      <td>${d.done ? `<span class="badge ok">✓ ${pfmt(d.doneDate)}</span>` : `<span class="badge pend">Pendiente</span>`}</td>
+      <td class="n" style="white-space:nowrap"><button class="btn-sm" onclick="commentPend('${d.id}')" title="Agregar comentario">💬</button> <button class="btn-sm" onclick="deletePend('${d.id}')" title="Borrar pendiente">🗑</button></td>
+    </tr>`).join("");
+  $("pl").innerHTML = rows
+    ? `<table><thead><tr><th class="pc">✓</th><th>Área</th><th>Responsable</th><th>Observaciones</th><th>Fecha</th><th>Estado</th><th class="n"></th></tr></thead><tbody>${rows}</tbody></table>`
+    : `<p class="mu">No hay pendientes ${mensual ? "en este mes" : "en este día"}.</p>`;
+}
+["pfa","pfe"].forEach(i => $(i).onchange = renderPend);
+
+window.editInd = async (i) => {
+  const a = +$("ca").value;
+  const name = prompt("Nuevo nombre del indicador:", AREAS[a][1][i]);
+  if (name && name.trim()) {
+    try { await areasOp({ op: "renameInd", areaId: aid(a), indId: iid(a,i), name: name.trim() }); renderCap(); render(); }
+    catch(e) { alert("⚠ " + e.message); }
+  }
+};
+
+window.deleteInd = async (i) => {
+  const a = +$("ca").value, n = AREAS[a][1][i];
+  if (!confirm(`¿Borrar el indicador "${n}" de ${AREAS[a][0]}? Dejará de mostrarse para todos los usuarios.`)) return;
+  try { await areasOp({ op: "deleteInd", areaId: aid(a), indId: iid(a,i) }); renderCap(); render(); $("ms").textContent = "✓ Indicador borrado"; }
+  catch(e) { $("ms").textContent = "⚠ " + e.message; }
+};
+
+$("sv").onclick=async()=>{
+  const f=$("cf").value,a=+$("ca").value;
+  if(!f){$("ms").textContent="Elige una fecha";return}
+  // Validar formato h:mm de tiempos muertos antes de guardar
+  for (let i = 0; i < AREAS[a][1].length; i++) {
+    if (!isTM(AREAS[a][1][i])) continue;
+    for (const l of [0,1,2]) {
+      const el = $("in_"+i+"_"+l);
+      if (el && isNaN(parseHM(el.value))) { el.focus(); $("ms").textContent = `⚠ Formato inválido en "${AREAS[a][1][i]}" (${LN[l]}). Usa horas:minutos, ej. 2:55`; return; }
+    }
+  }
+  $("ms").textContent="Guardando...";
+  const k=key(f,a);
+  // Trae lo último de la nube para no borrar lo que otra persona capturó mientras tanto
+  await loadCloudData();
+  const base = docs[k] && docs[k].v ? docs[k].v : {};
+  const v = {};
+  Object.keys(base).forEach(id => v[id] = [...base[id]]);
+  AREAS[a][1].forEach((n,i)=>{
+    const id = iid(a,i), orig = capOrig.k === k ? (capOrig.v[id] || []) : [];
+    const row = v[id] ? [...v[id]] : [null,null,null];
+    [0,1,2].forEach(l=>{
+      const el=$("in_"+i+"_"+l); if(!el) return;
+      const tm = isTM(n);
+      const x = tm ? parseHM(el.value) : (el.value===""?null:+el.value);
+      // En tiempos muertos se compara el texto mostrado (h:mm) para no alterar valores sin cambios
+      const same = tm ? el.value.trim() === (orig[l] == null ? "" : hm(orig[l])) : x === (orig[l] ?? null);
+      if (capOrig.k !== k || !same) row[l] = x;
+    });
+    v[id] = row;
+  });
+  // Comentarios por indicador: igual que las celdas, solo se reemplaza el que esta persona cambió
+  const cm = {...((docs[k] && docs[k].cm) || {})};
+  AREAS[a][1].forEach((n,i)=>{
+    const id = iid(a,i), el = $("cm_"+i); if(!el) return;
+    const x = el.value.trim();
+    if (capOrig.k !== k || x !== (capOrig.cm[id] || "")) { if (x) cm[id] = x; else delete cm[id]; }
+  });
+  const data={fecha:f,area:AREAS[a][0],v,cm};
+  if (docs[k] && docs[k].c) data.c = docs[k].c;
+
+  try{
+    docs[k]=data;
+    localStorage.setItem("reg_v1",JSON.stringify(docs));
+    await postDoc(k, data);
+    $("ms").textContent="✓ Guardado exitosamente · "+AREAS[a][0]+" · "+f;
+    const msg = $("ms").textContent;
+    renderCap(); $("ms").textContent = msg;
+    render();
+  }catch(e){
+    $("ms").textContent="⚠ Error al guardar los datos";
+    render();
+  }
+};
+
+window.editData = (f, ai) => {
+  $("cf").value = f;
+  $("ca").value = ai;
+  tab(1); 
+  renderCap(); 
+};
+
+window.deleteData = async (f, ai) => {
+  if(confirm(`¿Estás seguro de borrar los datos capturados de ${AREAS[ai][0]} para el día ${f}?`)) {
+    const k = key(f, ai);
+    delete docs[k];
+    localStorage.setItem("reg_v1", JSON.stringify(docs));
+    await postDoc(k, {fecha:f, area:AREAS[ai][0], v:{}, deleted:true});
+    render(); 
+  }
+};
+
+function render(){
+  if(!$("p1").hidden){if(!$("cb").children.length)renderCap();return}
+  const m=$("vm").value;$("ld").hidden=m!="d";$("lm").hidden=m!="m";
+  $("vc").innerHTML=m=="d"?daily():monthly();
+  if(m=="m")drawChart();
+  renderPend();
+}
+
+function daily(){
+  const f=$("vd").value;
+  const chips=segAreas().map(([a,ai])=>{const ok=!!docs[key(f,ai)];return `<span class="chip ${ok?"ok":"pend"}">${ok?"✓":"○"} ${a[0]}</span>`}).join("");
+  let rows="";
+  segAreas().forEach(([a,ai])=>{
+    const hasData = !!docs[key(f,ai)];
+    const actions = hasData ? `<button onclick="editData('${f}', ${ai})" class="btn-sm">✏️ Editar</button> <button onclick="deleteData('${f}', ${ai})" class="btn-sm" style="color:var(--pend);border-color:var(--pend)">🗑 Borrar</button>` : '';
+    rows+=`<tr class="g"><td colspan="2">${a[0]}</td><td colspan="2" class="n">${actions}</td></tr>`;
+    // Comentario general del área (versión anterior), si existe
+    const ac = docs[key(f,ai)] && docs[key(f,ai)].c;
+    if (ac) rows+=`<tr><td colspan="4" class="mu" style="white-space:pre-wrap">💬 ${esc(ac)}</td></tr>`;
+    
+    a[1].forEach((n,i)=>{
+      rows+=`<tr><td>${n}</td>`+[0,1,2].map(l=>{
+        if(!lineas(n,ai).includes(l)) return NA;
+        const v = val(f,ai,i,l);
+        const alertClass = getAlertClass(n, v, ai);
+        return `<td class="n ${alertClass}">${fv(n,v)}</td>`;
+      }).join("")+`</tr>`;
+      const c = com(f,ai,i);
+      if (c) rows+=`<tr><td colspan="4" class="mu" style="white-space:pre-wrap;padding-left:20px;border-bottom-style:dashed">💬 ${esc(c)}</td></tr>`;
+    })
+  });
+  return `<div class="chips">${chips}</div><div class="tw"><table><thead><tr><th>Indicador</th>${LN.map(l=>`<th class="n">${l}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+
+function monthDays(){
+  const mo=$("vmo").value;if(!mo)return[];
+  const [y,m]=mo.split("-").map(Number);const n=new Date(y,m,0).getDate();
+  return Array.from({length:n},(_,i)=>mo+"-"+String(i+1).padStart(2,"0"));
+}
+
+// Día seleccionado al dar clic en la gráfica mensual (null = todo el mes)
+let selDay=null;
+function monthTable(){
+  let days=monthDays();
+  if(selDay&&!days.includes(selDay))selDay=null;
+  if(selDay)days=[selDay];
+  let rows="";
+  segAreas().forEach(([a,ai])=>{rows+=`<tr class="g"><td colspan="5">${a[0]}</td></tr>`;
+    // Comentario general del área (versión anterior) del día seleccionado
+    const ac=selDay&&docs[key(selDay,ai)]&&docs[key(selDay,ai)].c;
+    if(ac)rows+=`<tr><td colspan="5" class="mu" style="white-space:pre-wrap">💬 ${esc(ac)}</td></tr>`;
+    a[1].forEach((n,i)=>{
+      const avgs=[0,1,2].map(l=>{const vs=days.map(d=>val(d,ai,i,l)).filter(x=>x!=null);return vs.length?vs.reduce((s,x)=>s+x,0)/vs.length:null});
+      const nd=days.filter(d=>val(d,ai,i,0)!=null||val(d,ai,i,1)!=null||val(d,ai,i,2)!=null).length;
+      rows+=`<tr><td>${n}</td>`+avgs.map((v,l)=>{
+        if(!lineas(n,ai).includes(l)) return NA;
+        const alertClass = getAlertClass(n, v, ai);
+        return `<td class="n ${alertClass}">${selDay?fv(n,v):fmtAvg(v,n)}</td>`;
+      }).join("")+`<td class="n mu">${nd}</td></tr>`;
+      const c=selDay&&com(selDay,ai,i);
+      if(c)rows+=`<tr><td colspan="5" class="mu" style="white-space:pre-wrap;padding-left:20px;border-bottom-style:dashed">💬 ${esc(c)}</td></tr>`})});
+  const head=selDay
+    ?`<h3>Datos del día ${dfmt(selDay)} <button class="btn-sm" onclick="setSelDay(null)">✕ Ver todo el mes</button></h3>`
+    :`<h3>Promedio mensual general</h3><p class="mu">Da clic en un día de la gráfica para ver solo los datos y comentarios de ese día.</p>`;
+  return `${head}<div class="tw"><table><thead><tr><th>Indicador</th>${LN.map(l=>`<th class="n">${l}</th>`).join("")}<th class="n">Días</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+window.setSelDay=d=>{selDay=d;drawChart();if($("mt"))$("mt").innerHTML=monthTable()};
+const dfmt=d=>{const [y,m,dd]=d.split("-").map(Number);return new Date(y,m-1,dd).toLocaleDateString("es-MX",{weekday:"short",day:"numeric",month:"short",year:"numeric"})};
+
+function monthly(){
+  const days=monthDays();
+  const cap=days.filter(d=>AREAS.some((_,ai)=>docs[key(d,ai)])).length;
+  const opts=segAreas().map(([a,ai])=>`<optgroup label="${a[0]}">`+a[1].map((n,i)=>`<option value="${ai}.${i}">${n}</option>`).join("")+`</optgroup>`).join("");
+  const sel=$("ci")?$("ci").value:"0.0";
+  return `<p class="mu">Días con captura en el mes: ${cap}</p>
+  <h3>Tendencia diaria y Promedio</h3>
+  <label style="max-width:300px">Indicador<select id="ci" onchange="drawChart()">${opts}</select></label>
+  <div class="leg" id="ch-leg"></div>
+  <div id="ch"></div>
+  <div id="mt">${monthTable()}</div>`;
+}
+
+let lastSel=null;
+function drawChart(){
+  const s=$("ci");if(!s)return;
+  if(s.dataset.init!="1"){if(lastSel)s.value=lastSel;if(!s.value&&s.options.length)s.selectedIndex=0;s.dataset.init="1"}
+  lastSel=s.value;
+  const [ai,ii]=s.value.split(".").map(Number),days=monthDays();
+  const W=640,H=240,P=36;
+  const F=isTM(AREAS[ai][1][ii])?hm:fmt;
+  const pm=isProdMerma(AREAS[ai][1][ii],ai);
+  const mt=days.map(d=>pm?mermaTot(d,ai,ii):null);
+  const ls=lineas(AREAS[ai][1][ii],ai);
+  const acum=ACUM.includes(norm(AREAS[ai][1][ii]));
+  const stack=STACK.includes(norm(AREAS[ai][1][ii]));
+  const series=[0,1,2].map(l=>ls.includes(l)?days.map(d=>val(d,ai,ii,l)):days.map(()=>null));
+  const all=series.flat().filter(x=>x!=null);
+  
+  if(!all.length){
+    $("ch").innerHTML='<p class="mu">Sin datos para este indicador en el mes.</p>';
+    if($("ch-leg")) $("ch-leg").innerHTML = "";
+    return;
+  }
+  
+  // Total por día (suma de las líneas) para las barras apiladas
+  const tot=days.map((_,i)=>{const vs=ls.map(l=>series[l][i]).filter(x=>x!=null);return vs.length?vs.reduce((a,b)=>a+b,0):null});
+  let mn,mx;
+  if(stack){mn=0;mx=Math.max(0,...tot.filter(x=>x!=null));if(mx===0)mx=1;mx*=1.1}
+  else{mn=Math.min(...all);mx=Math.max(...all);if(mn===mx){mn-=1;mx+=1}
+    const pad=(mx-mn)*.1;mn-=pad;mx+=pad;}
+  const bw=(W-P-10)/Math.max(days.length,1);
+  const step=stack?bw:(W-P-10)/Math.max(days.length-1,1);
+  const X=i=>stack?P+(i+.5)*bw:P+i*step,Y=v=>H-24-(v-mn)*(H-40)/(mx-mn);
+  let g="";
+  
+  for(let k=0;k<=4;k++){const v=mn+(mx-mn)*k/4,y=Y(v);g+=`<line x1="${P}" x2="${W-10}" y1="${y}" y2="${y}" stroke="var(--br)"/><text x="${P-4}" y="${y+4}" text-anchor="end" font-size="10" fill="var(--mu)">${F(v)}</text>`}
+  days.forEach((d,i)=>{if((i+1)%5==0||i==0)g+=`<text x="${X(i)}" y="${H-8}" text-anchor="middle" font-size="10" fill="var(--mu)">${i+1}</text>`});
+  
+  let legHtml = "";
+  
+  series.forEach((sr,l)=>{
+    if(!ls.includes(l)) return;
+    const valid = sr.filter(x=>x!=null);
+    const avg = valid.length ? valid.reduce((a,b)=>a+b,0)/valid.length : null;
+    
+    legHtml += `<span style="margin-right:12px"><i style="background:${COL[l]}"></i>${LN[l]} ${avg!=null ? `<span style="color:${COL[l]}; font-weight:600; margin-left:4px">(${acum?`Acumulado: ${F(valid.reduce((a,b)=>a+b,0))} · `:""}Prom: ${fmtAvg(avg,AREAS[ai][1][ii])})</span>`:''}</span>`;
+    
+    if(stack) return;
+    if(avg != null) {
+      const y = Y(avg);
+      g += `<line x1="${P}" x2="${W-10}" y1="${y}" y2="${y}" stroke="${COL[l]}" stroke-width="1.5" stroke-dasharray="5,5" opacity="0.6"/>`;
+    }
+    
+    let p="";sr.forEach((v,i)=>{if(v!=null)p+=(p&&sr[i-1]!=null?"L":"M")+X(i)+" "+Y(v)});
+    if(p) g+=`<path d="${p}" fill="none" stroke="${COL[l]}" stroke-width="2"/>`;
+    sr.forEach((v,i)=>{if(v!=null)g+=`<circle cx="${X(i)}" cy="${Y(v)}" r="3" fill="${COL[l]}"/>`});
+  });
+  
+  if(stack){
+    // Barras verticales apiladas: Línea 1 abajo, Línea 2 encima
+    days.forEach((d,i)=>{
+      let base=0;
+      ls.forEach(l=>{
+        const v=series[l][i];if(v==null||v<=0)return;
+        const y0=Y(base),y1=Y(base+v);
+        g+=`<rect x="${X(i)-bw*.35}" y="${y1}" width="${bw*.7}" height="${Math.max(0,y0-y1)}" fill="${COL[l]}"/>`;
+        base+=v;
+      });
+    });
+    const tv=tot.filter(x=>x!=null);
+    if(tv.length) legHtml += `<span style="font-weight:600">Total: <span style="margin-left:4px">${F(tv.reduce((a,b)=>a+b,0))} · Prom: ${fmtAvg(tv.reduce((a,b)=>a+b,0)/tv.length,AREAS[ai][1][ii])}</span></span>`;
+  }else if(acum&&ls.length>1){
+    // Indicadores acumulables sin barras (p. ej. Producto detenido): total de todas las líneas
+    const tv=tot.filter(x=>x!=null);
+    if(tv.length) legHtml += `<span style="font-weight:600">Total: <span style="margin-left:4px">${F(tv.reduce((a,b)=>a+b,0))} · Prom: ${fmtAvg(tv.reduce((a,b)=>a+b,0)/tv.length,AREAS[ai][1][ii])}</span></span>`;
+  }
+  if(pm){
+    const mv=mt.filter(x=>x!=null);
+    if(mv.length) legHtml += `<span style="font-weight:600">Total: <span style="margin-left:4px">Prom: ${fmtAvg(mv.reduce((a,b)=>a+b,0)/mv.length,AREAS[ai][1][ii])}</span></span>`;
+  }
+  // Resalta el día seleccionado
+  const si=selDay?days.indexOf(selDay):-1;
+  if(si>=0){const sw=stack?bw:Math.max(step,6);g=`<rect x="${X(si)-sw/2}" y="16" width="${sw}" height="${H-40}" fill="var(--mu)" opacity="0.18"/>`+g}
+  if($("ch-leg")) $("ch-leg").innerHTML = legHtml;
+  g+=`<line id="ch-hl" x1="0" x2="0" y1="16" y2="${H-24}" stroke="var(--mu)" stroke-width="1" stroke-dasharray="3,3" visibility="hidden"/>`;
+  g+=`<g id="ch-hd" visibility="hidden">${[0,1,2].map(l=>`<circle r="5" fill="var(--card)" stroke="${COL[l]}" stroke-width="2"/>`).join("")}</g>`;
+  $("ch").innerHTML=`<svg viewBox="0 0 ${W} ${H}">${g}</svg><div class="ttip" id="ch-tt"></div>`;
+
+  const svg=$("ch").querySelector("svg"),hl=$("ch-hl"),hd=$("ch-hd"),tt=$("ch-tt");
+  const hide=()=>{hl.setAttribute("visibility","hidden");hd.setAttribute("visibility","hidden");tt.style.display="none"};
+  const idx=e=>{
+    const r=svg.getBoundingClientRect();if(!r.width)return -1;
+    const sx=(e.clientX-r.left)*W/r.width;
+    return Math.max(0,Math.min(days.length-1,stack?Math.floor((sx-P)/step):Math.round((sx-P)/step)));
+  };
+  const move=e=>{
+    const r=svg.getBoundingClientRect();if(!r.width)return;
+    const i=idx(e);
+    const x=X(i);
+    hl.setAttribute("x1",x);hl.setAttribute("x2",x);hl.setAttribute("visibility","visible");
+    let any=false;
+    [...hd.children].forEach((c,l)=>{const v=series[l][i];if(v!=null)any=true;if(stack){c.style.display="none";return}if(v!=null){any=true;c.setAttribute("cx",x);c.setAttribute("cy",Y(v));c.style.display=""}else c.style.display="none"});
+    hd.setAttribute("visibility","visible");
+    tt.innerHTML=`<b>${dfmt(days[i])}</b>`+ls.map(l=>`<div><i style="background:${COL[l]}"></i>${LN[l]}<span class="v">${F(series[l][i])}</span></div>`+(acum&&!stack?`<div class="mu" style="padding-left:14px">Acumulado al día<span class="v">${F(series[l].slice(0,i+1).reduce((a,b)=>a+(b??0),0))}</span></div>`:"")).join("")+((stack||(acum&&ls.length>1))&&any?`<div style="border-top:1px solid var(--br);margin-top:3px;padding-top:3px;font-weight:600">Total<span class="v">${F(tot[i])}</span></div><div class="mu" style="padding-left:14px">Acumulado total al día<span class="v">${F(tot.slice(0,i+1).reduce((a,b)=>a+(b??0),0))}</span></div>`:"")+(pm&&mt[i]!=null?`<div style="border-top:1px solid var(--br);margin-top:3px;padding-top:3px;font-weight:600">Total<span class="v">${F(mt[i])}</span></div>`:"")+(any?"":`<div class="mu">Sin captura</div>`);
+    tt.style.display="block";
+    const cw=$("ch").clientWidth,px=x*r.width/W,tw=tt.offsetWidth;
+    let left=px+12;if(left+tw>cw)left=px-tw-12;if(left<0)left=0;
+    tt.style.left=left+"px";
+    tt.style.top=Math.max(0,(e.clientY-r.top)-tt.offsetHeight-10)+"px";
+  };
+  svg.addEventListener("pointermove",move);
+  svg.addEventListener("pointerdown",move);
+  svg.addEventListener("pointerleave",hide);
+  // Clic en un día: la tabla muestra solo los datos de ese día (clic de nuevo para quitar)
+  svg.style.cursor="pointer";
+  svg.addEventListener("click",e=>{const i=idx(e);if(i<0)return;setSelDay(selDay===days[i]?null:days[i])});
+}
+
+// Normaliza los datos de la nube: cada registro se ubica según el nombre de área
+// que trae guardado (no según el índice), y se ignoran los registros borrados.
+function normalizeDocs(raw, pendOut){
+  const out = {}, moved = [];
+  const byName = {};
+  CFG.forEach(a => byName[norm(a.name)] = a.id);
+  Object.keys(raw || {}).forEach(k => {
+    const d = raw[k];
+    if (d && typeof d === "object" && d.tipo === "pendiente") { if (pendOut && !d.deleted && d.id) pendOut[d.id] = d; return; }
+    if (!d || typeof d !== "object" || d.deleted) return;
+    const f = d.fecha || k.split("_")[0];
+    const id = byName[norm(d.area)];
+    const nk = id ? f + "_" + id : k;
+    if (nk === k) out[k] = d; else moved.push([nk, d]);
+  });
+  // Los registros que quedaron en una clave equivocada solo se usan si no hay uno correcto
+  moved.forEach(([nk, d]) => { if (!out[nk]) out[nk] = d; });
+  return out;
+}
+
+async function loadCloudData(){
+  try{
+    if(API_URL){
+      const res = await fetch(API_URL, { redirect: "follow", cache: "no-store" });
+      if(!res.ok) throw new Error("Error en la respuesta del servidor");
+      const po = {};
+      docs = normalizeDocs(await res.json(), po);
+      PEND = po; savePend();
+      localStorage.setItem("reg_v1", JSON.stringify(docs));
+      $("warn").innerHTML='<div class="warn" style="border-color:var(--ok);color:var(--ok)">✓ Conectado a la base de datos en Google Sheets</div>';
+      return true;
+    }
+  }catch(e){
+    console.error("Error al conectar:", e);
+    $("warn").innerHTML='<div class="warn">⚠ Modo sin conexión / Sincronizando localmente</div>';
+  }
+  return false;
+}
+
+// Recarga configuración y datos; no pisa lo que el usuario está escribiendo
+let refreshing = false;
+async function refreshAll(force){
+  if (refreshing) return;
+  refreshing = true;
+  try {
+    await loadAreas();
+    await loadCloudData();
+    updateAreaSelect();
+    if (force || !capDirty) renderCap();
+    render();
+  } finally { refreshing = false; }
+}
+
+(async()=>{
+  try{docs=normalizeDocs(JSON.parse(localStorage.getItem("reg_v1")||"{}"))}catch(e){}
+  renderCap();
+  await refreshAll(true);
+  // Sincronización automática con los cambios de otras personas
+  setInterval(()=>{ if(!document.hidden) refreshAll(false); }, 30000);
+  document.addEventListener("visibilitychange", ()=>{ if(!document.hidden) refreshAll(false); });
+})();
+</script>
+<script async="" src="./index_files/ar" data-netlify-deploy-id="6acff9e74b7de0154a316e06" data-netlify-site-id="0f796fdc-e3b2-4f57-a453-5436a92509fb" data-agent-runner-id="6acff96d8c265896f2d1a052"></script>
+<script async="" src="./index_files/ar" data-netlify-deploy-id="6ad644a58ea34300250eabd4" data-netlify-site-id="0f796fdc-e3b2-4f57-a453-5436a92509fb" data-agent-runner-id="6ad64478a475f0616b8fab8e"></script>
+
+<script async="" src="./index_files/hud" data-nf-variant="public" data-netlify-site-id="0f796fdc-e3b2-4f57-a453-5436a92509fb" data-app-host="app.netlify.com"></script><script async="" src="./index_files/hud(1)" data-nf-variant="owner-private" data-netlify-site-id="0f796fdc-e3b2-4f57-a453-5436a92509fb" data-app-host="app.netlify.com"></script>
+<iframe id="nl-badge-frame" title="Powered by Netlify" style="position: fixed; bottom: 0px; right: 0px; border: 0px; margin: 0px; padding: 0px; background: transparent; color-scheme: dark; z-index: 2147483645; width: 197px; height: 64px; clip-path: path(&quot;M 3 3 H 184 V 51 H 3 Z&quot;);" data-nl-ready="1" src="./index_files/saved_resource.html"></iframe></body></html>
